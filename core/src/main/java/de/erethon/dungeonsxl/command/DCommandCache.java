@@ -40,6 +40,7 @@ public class DCommandCache extends DRECommandCache {
     public DeleteCommand delete;
     public DungeonItemCommand dungeonItem;
     public GameCommand game;
+    public GameruleCommand gamerule;
     public GroupCommand group;
     public HelpCommand help;
     public ImportCommand importCmd;
@@ -75,6 +76,7 @@ public class DCommandCache extends DRECommandCache {
         delete = new DeleteCommand(plugin);
         dungeonItem = new DungeonItemCommand(plugin);
         game = new GameCommand(plugin);
+        gamerule = new GameruleCommand(plugin);
         group = new GroupCommand(plugin);
         help = new HelpCommand(plugin);
         importCmd = new ImportCommand(plugin);
@@ -105,6 +107,7 @@ public class DCommandCache extends DRECommandCache {
         addCommand(enter);
         addCommand(escape);
         addCommand(game);
+        addCommand(gamerule);
         addCommand(group);
         addCommand(help);
         addCommand(importCmd);

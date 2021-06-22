@@ -419,6 +419,13 @@ public class GameRule<V> {
     }
 
     /**
+     * @return the class of V
+     */
+    public Class<V> getType() {
+        return type;
+    }
+
+    /**
      * Returns the value used if nothing is specified by a game rule provider.
      *
      * @return the value used if nothing is specified by a game rule provider

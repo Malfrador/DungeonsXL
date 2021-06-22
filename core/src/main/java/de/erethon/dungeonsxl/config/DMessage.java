@@ -16,6 +16,7 @@
  */
 package de.erethon.dungeonsxl.config;
 
+import com.alessiodp.parties.api.events.bukkit.player.BukkitPartiesChatEvent;
 import de.erethon.commons.config.Message;
 
 /**
@@ -52,6 +53,8 @@ public enum DMessage implements Message {
     CMD_ENTER_SUCCESS("cmd.enter.success"),
     CMD_ESCAPE_HELP("cmd.escape.help"),
     CMD_GAME_HELP("cmd.game.help"),
+    CMD_GAMERULE_HELP("cmd.gamerule.help"),
+    CMD_GAMERULE_SUCCESS("cmd.gamerule.success"),
     CMD_GROUP_HELP_MAIN("cmd.group.help.main"),
     CMD_GROUP_HELP_CREATE("cmd.group.help.create"),
     CMD_GROUP_HELP_DISBAND("cmd.group.help.disband"),
@@ -110,6 +113,11 @@ public enum DMessage implements Message {
     ERROR_DISPENSER("error.dispenser"),
     ERROR_DROP("error.drop"),
     ERROR_ENDERCHEST("error.enderchest"),
+    ERROR_GAMERULE_INVALID("error.gameruleInvalid"),
+    ERROR_GAMERULE_NOT_SUPPORTED("error.gameruleNotSupported"),
+    ERROR_GAMERULE_NO_DIFFICULTY("error.gameruleNoDifficulty"),
+    ERROR_GAMERULE_NO_GAMEMODE("error.gameruleNoGamemode"),
+    ERROR_GAMERULE_NO_GAMEGOAL("error.gameruleNoGamegoal"),
     ERROR_IN_GROUP("error.inGroup"),
     ERROR_JOIN_GROUP("error.joinGroup"),
     ERROR_LEAVE_DUNGEON("error.leaveDungeon"),
